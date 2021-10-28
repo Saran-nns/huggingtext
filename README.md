@@ -20,15 +20,15 @@ In addition, the project has api test module `test.py`, `Dockerfile` which inclu
 
 ### System configuration
 
-For quicker inference, I use NVIDIA CUDA base images for the container and the system configuration is
+For quicker inference, I used CUDA base images for the container and the system configuration is
 
 OS: Ubuntu20.4
 
 GPU: NVIDIA GeForce GTX 1060Ti
 
-CUDA: 11.4
+Cuda: 11.4
 
-CUDNN: 8.0
+Cudnn: 8.0
 
 ### Build and Run Docker Container
 
