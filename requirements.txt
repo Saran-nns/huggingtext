@@ -1,0 +1,5 @@
+transformers==4.11.3
+-f https://download.pytorch.org/whl/torch_stable.html 
+torch==1.10.0+cpu 
+Flask==2.0.2
+germansentiment==1.0.6
