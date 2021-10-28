@@ -82,8 +82,3 @@ class SentimentModel:
         )  # substitute multiple whitespace with single whitespace
         text = text.strip().lower()
         return text
-
-# if __name__=="__main__":
-#     model = SentimentModel()
-#     print(model.predict_sentiment(["Ich bin Saran :)     "]))
-    

@@ -10,26 +10,20 @@ model = SentimentModel()
 def index():
     return render_template("index.html")
 
-
-# code
 @app.route("/", methods=["POST"])
 def index_post():
 
     # Read the values from the form
     original_text = request.form["text"]
 
-    # Retrieve the translation
-
-    if type(original_text)==str:
-
-        translated_text = model.predict_sentiment(tuple(original_text))
+    # Retrieve the sentiment
+    sentiment = model.predict_sentiment([original_text])
 
 
-    # Call render template, passing the translated text,
-    # original text, and target language to the template
+    # Call render template, passing the sentiment text and original text
     return render_template(
         "results.html",
-        translated_text=translated_text,
+        sentiment=sentiment,
         original_text=original_text,
     )
 

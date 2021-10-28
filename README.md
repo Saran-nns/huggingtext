@@ -4,6 +4,10 @@
 
 For more detailed read please visit [germansentiment](https://pypi.org/project/germansentiment/) and [BERT HuggingFace](https://huggingface.co/transformers/model_doc/bert.html)     
 
+### Supported Language(s):
+
+At the moment **HuggingTest** support only German texts
+
 ### Getting started
 
 In order to package the HuggingText in Docker, you'll need docker installed.
@@ -53,10 +57,12 @@ and to run the container,
 
 ```sh
 
-docker run -p 8000:5000 -v /home/saran/huggingtext/:/root/huggingtext -ti huggingtext:v0.1.0 /bin/bash -c "cd /root/huggingtext/ && source activate huggingtext && python app.py" 
+docker run -p 8000:5000 -v ~/huggingtext/:/root/huggingtext -ti huggingtext:v0.1.0 /bin/bash -c "cd /src && source activate huggingtext && python app.py" 
 
 ``` 
-Note that port 8000 from docker container is listening to port 5000 from the flask app. Therefore, to access the app visit http://127.0.0.1:8000
+### ENDPOINT
+
+The Flask application has both `GET` and `POST` methods defined at `/`.
 
 ### TODO:
 
