@@ -16,7 +16,7 @@ Please visit and download the Docker for your preferred operating system at [Lin
 
 ### Project setup
 
-![HUggingText directory tree](./imgs/tree.png)
+![HuggingText directory tree](./imgs/tree.png)
 
 The `germansentiment` model/inference code is stored at `sentimentmodel.py` and the web api code is under `app.py`.
 
@@ -38,9 +38,9 @@ Cudnn: 8.0
 
 ```sh
 
-git clone https://github.com/Saran-nns/HuggingText.git
+git clone https://github.com/Saran-nns/huggingtext.git
 
-cd HuggingText
+cd huggingtext
 
 sh run.sh
 
