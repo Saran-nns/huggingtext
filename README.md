@@ -36,7 +36,7 @@ CUDNN: 8.0
 
 git clone https://github.com/Saran-nns/HuggingText.git
 
-cd huggingtest
+cd HuggingText
 
 sh run.sh
 
