@@ -4,7 +4,7 @@ FROM nvidia/cuda:11.4.2-cudnn8-runtime-ubuntu20.04
 # Set default PATH variable to virtual environment bin/ 
 ENV PATH="/root/miniconda3/bin:${PATH}"
 ARG PATH="/root/miniconda3/bin:${PATH}"
-
+    
 # Update and install package downlaoder and python 3
 RUN apt update \
     && apt install -y wget python3-dev
