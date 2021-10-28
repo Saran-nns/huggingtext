@@ -31,6 +31,7 @@ CUDA: 11.4
 CUDNN: 8.0
 
 ### Build and Run Docker Container
+
 ```sh
 
 git clone https://github.com/Saran-nns/HuggingText.git
@@ -38,6 +39,7 @@ git clone https://github.com/Saran-nns/HuggingText.git
 cd huggingtest
 
 sh run.sh
+
 ```
 
 In case you would like to build container manually,
@@ -54,7 +56,7 @@ and to run the container,
 docker run -p 8000:5000 -v /home/saran/huggingtext/:/root/huggingtext -ti huggingtext:v0.1.0 /bin/bash -c "cd /root/huggingtext/ && source activate huggingtext && python app.py" 
 
 ``` 
-Note that port 8000 from docker container is listening to port 5000 from the flask app. Therefore, to access the app please visit http://127.0.0.1:8000
+Note that port 8000 from docker container is listening to port 5000 from the flask app. Therefore, to access the app visit http://127.0.0.1:8000
 
 ### TODO:
 
