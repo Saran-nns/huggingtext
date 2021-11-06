@@ -6,11 +6,9 @@ For more detailed read please visit [germansentiment](https://pypi.org/project/g
 
 ### Supported Language(s):
 
-At the moment **HuggingTest** support only German texts
+At the moment **HuggingText** support only German texts
 
 ### Getting started
-
-In order to package the HuggingText in Docker, you'll need docker installed.
 
 Please visit and download the Docker for your preferred operating system at [Linux, MacOS, Windows](https://docs.docker.com/get-started/)
 
@@ -21,18 +19,6 @@ Please visit and download the Docker for your preferred operating system at [Lin
 The `germansentiment` model/inference code is stored at `sentimentmodel.py` and the web api code is under `app.py`.
 
 In addition, the project has api test module `test.py`, `Dockerfile` which include commands to build and run the container and a `requirements.txt` file to setup the virtual environment.
-
-### System configuration
-
-For quicker inference, I used CUDA base images for the container and the system configuration is
-
-OS: Ubuntu20.4
-
-GPU: NVIDIA GeForce GTX 1060Ti
-
-Cuda: 11.4
-
-Cudnn: 8.0
 
 ### Build and Run Docker Container
 
