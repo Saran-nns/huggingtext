@@ -1,6 +1,6 @@
 # HuggingText
 
-**HuggingText** is a simple Python API for classifying and analysing sentiment in text. It depends on the PyPi package `germansentiment` at a backend to detect sentiment in German texts. The `germansentiment`itself is build on top of BERT architecture open sourced by Huggingface. 
+**HuggingText** is a simple Python API for classifying and analysing sentiment in text. This microservice template depends on the PyPi package `germansentiment` at the backend to detect sentiment in German texts. The `germansentiment`itself is build on top of BERT architecture open sourced by Huggingface. 
 
 For more detailed read please visit [germansentiment](https://pypi.org/project/germansentiment/) and [BERT HuggingFace](https://huggingface.co/transformers/model_doc/bert.html)     
 
